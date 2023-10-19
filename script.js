@@ -1,13 +1,33 @@
-// Get all section elements
-const sections = document.querySelectorAll('section');
+let ticking = false;
+const stars = document.getElementById('stars');
+const stars2 = document.getElementById('stars2');
+const stars3 = document.getElementById('stars3');
 
-// Add event listeners to the navigation links to scroll to the respective sections
-document.querySelectorAll('nav a').forEach((link) => {
-    link.addEventListener('click', () => {
-        const targetSectionId = link.getAttribute('href').substring(1); // Remove the '#' symbol
-        const targetSection = document.getElementById(targetSectionId);
-        
-        // Scroll to the target section smoothly
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    });
-});
+
+let scrollValue = 0; // Initialize the scroll value
+
+const animateStars = function () {
+    stars.style.transform = `translateY(${scrollValue * 0.05}px)`;
+    stars2.style.transform = `translateY(${scrollValue * 0.11}px)`;
+    stars3.style.transform = `translateY(${scrollValue * 0.29}px)`;
+};
+
+const onScroll = () => {
+    scrollValue = window.scrollY;
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            animateStars();
+            ticking = false;
+        });
+        ticking = true;
+    }
+};
+
+
+const start = function () {
+}
+
+window.addEventListener("load", start);
+
+// Initial animation call in case you start the page already scrolled
+animateStars();
