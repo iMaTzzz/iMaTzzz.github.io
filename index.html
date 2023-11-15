@@ -4,42 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matteo SCIASCIA's portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!--<div class="imageContainer">
-        <img src="images/planet1.jpg" alt="Image 1">
-        <img src="images/planet2.jpg" alt="Image 2">
-        <img src="images/planet3.jpg" alt="Image 3">
-        <img src="images/planet4.jpg" alt="Image 4">
-    </div>-->
+    <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
 
-    <!--<header>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>-->
-    </header>
-    <section class="starsWrapper">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="assets/img/perfil.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">Hi, I'm</span>
+                    <h1 class="nav__name">Matteo <br> Sciascia</h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home' ></i> Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class='bx bx-code-block' ></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i> Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-bookmark'></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bxs-envelope'></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HOME ===============-->
+            <section id="home-content" class="content active">
+                <p>Welcome to my portfolio website.</p>
+            </section>
+
+            <!--=============== ABOUT ===============-->
+            <section id="about-content" class="content">
+                <h1>About me</h1>
+                <p>Hello, my name is Matteo Sciascia. I'm 21 years old.</p>
+            </section>
+
+            <!--=============== PROJECTS ===============-->
+            <section id="projects-content" class="content">
+                <h1>My Projects</h1>
+                <ul>
+                    <li>First project</li>
+                    <li>Second project</li>
+                    <li>Third project</li>
+                </ul>
+            </section>
+
+            <!--=============== EXPERIENCE ===============-->
+            <section id="experience-content" class="content">
+                <h1>My Experience</h1>
+                <ul>
+                    <li>Okayama University</li>
+                    <li>Cyanide studio</li>
+                </ul>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section id="skills-content" class="content">
+                <h1>Skills</h1>
+                <p>My skills.</p>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section id="contact-content" class="content">
+                <h1>Contact</h1>
+                <p>How to contact me.</p>
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+
+    <!--<section class="starsWrapper">
         <div id="smallStars"></div>
         <div id="mediumStars"></div>
         <div id="bigStars"></div>
         <div id="hugeStars"></div>
-    </section>
-    <section class="shootingStarsWrapper"></section>        
-    <div class="content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is where you can showcase your projects, skills, and experiences. Feel free to add text, images, and other content here.</p>
-        <p>This is the end.</p>
-    </div>
-    
-    <!-- Extend the content further if needed -->
-    <!-- <div class="content">
-        More content here
-    </div> -->
-
+    </section>-->
 </body>
 </html>
